@@ -74,7 +74,7 @@ class _HomeState extends State<Home> {
       //   },
       //   child: const Icon(Icons.add),
       // ),
-      //,
+      
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: maincolor,
         type: BottomNavigationBarType.fixed,
@@ -84,15 +84,15 @@ class _HomeState extends State<Home> {
             label: 'Trang chủ',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.volunteer_activism),
+            icon: Icon(Icons.construction),
             label: 'Đấu giá',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.handshake),
+            icon: Icon(Icons.shopping_cart),
             label: 'Giỏ hàng',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.speaker_notes),
+            icon: Icon(Icons.account_circle),
             label: 'Tôi',
           ),
         ],

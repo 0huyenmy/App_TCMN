@@ -29,142 +29,207 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text('ĐẶT HÀNG THEO YÊU CẦU',style: text22.semiBold.copyWith(color: whiteColor),),
-          backgroundColor: maincolor,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20.0),
-          ),
-          content: SizedBox(
-            height: 400.sp,
-            child: Column(
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
+            title: Text(
+              'ĐẶT HÀNG THEO YÊU CẦU',
+              style: text22.semiBold.copyWith(color: whiteColor),
+            ),
+            backgroundColor: maincolor,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20.0),
+            ),
+            content: SizedBox(
+              height: 400.sp,
+              child: Column(
                 children: [
-                  Text(
-                    'Số lượng',
-                    style: text20.medium.copyWith(color: whiteColor),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Số lượng',
+                        style: text20.medium.copyWith(color: whiteColor),
+                      ),
+                    ],
                   ),
-                ],
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 8.sp, bottom: 16.sp),
-                child: AppInput(
-                  hintText: 'Nhập số lượng',
-                  valueStyle: text16.medium,
-                ),
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Text(
-                    'Kích thước',
-                    style: text20.medium.copyWith(color: whiteColor),
-                  ),
-                ],
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 8.sp, bottom: 16.sp),
-                child: AppInput(
-                  hintText: 'Nhập kích thước',
-                  valueStyle: text16.medium,
-                ),
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Text(
-                    'Mô tả',
-                    style: text20.medium.copyWith(color: whiteColor),
-                  ),
-                ],
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 8.sp, bottom: 16.sp),
-                child: AppInput(
-                  hintText: 'Nhập mô tả',
-                  valueStyle: text16.medium,
-                ),
-              ),
-              // Add more form fields as needed...
-
-              SizedBox(height: 16.0), // Add space between form fields
-
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  ElevatedButton(
-                    onPressed: () {
-                      // Handle custom order submission
-                      Navigator.of(context).pop(); // Close the dialog
-                    },
-                    child: Text('Đặt hàng', style: text18.medium.copyWith(color: whiteColor),),
-                  ),
-                  ElevatedButton(
-                    onPressed: () {
-                      Navigator.of(context).pop('đã gửi thành công'); // Close the dialog on cancel
-                    },
-                    style: ElevatedButton.styleFrom(
-                      primary: Colors.grey, // Set color for cancel button
+                  Padding(
+                    padding: EdgeInsets.only(top: 8.sp, bottom: 16.sp),
+                    child: AppInput(
+                      hintText: 'Nhập số lượng',
+                      valueStyle: text16.medium,
                     ),
-                    child: Text('Hủy', style: text18.medium.copyWith(color: whiteColor),),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Kích thước',
+                        style: text20.medium.copyWith(color: whiteColor),
+                      ),
+                    ],
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(top: 8.sp, bottom: 16.sp),
+                    child: AppInput(
+                      hintText: 'Nhập kích thước',
+                      valueStyle: text16.medium,
+                    ),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Mô tả',
+                        style: text20.medium.copyWith(color: whiteColor),
+                      ),
+                    ],
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(top: 8.sp, bottom: 16.sp),
+                    child: AppInput(
+                      hintText: 'Nhập mô tả',
+                      valueStyle: text16.medium,
+                    ),
+                  ),
+                  // Add more form fields as needed...
+
+                  SizedBox(height: 16.0), // Add space between form fields
+
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      ElevatedButton(
+                        onPressed: () {
+                          // Handle custom order submission
+                          Navigator.of(context).pop(); // Close the dialog
+                        },
+                        child: Text(
+                          'Đặt hàng',
+                          style: text18.medium.copyWith(color: whiteColor),
+                        ),
+                      ),
+                      ElevatedButton(
+                        onPressed: () {
+                          Navigator.of(context).pop(
+                              'đã gửi thành công'); // Close the dialog on cancel
+                        },
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.grey, // Set color for cancel button
+                        ),
+                        child: Text(
+                          'Hủy',
+                          style: text18.medium.copyWith(color: whiteColor),
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
-            ],
-          ),
-          )
-          
-        );
+            ));
       },
     );
   }
+  int _quantity = 1;
+  void _showAddToCartDialog() {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+            title: Text(
+              'THÔNG TIN SẢN PHẨM',
+              style: text22.semiBold.copyWith(color: whiteColor),
+            ),
+            backgroundColor: maincolor,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20.sp)),
+            content: SizedBox(
+              height: 400.sp,
+              //width: 100.sp,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                //mainAxisSize: MainAxisSize.min,
+                children: [
+                  Image.network(
+                    widget.imagePath,
+                    width: 150.sp,
+                    height: 150.0.sp,
+                    //fit: BoxFit.cover,
+                  ),
+                  SizedBox(height: 16.0),
+                  Text(
+                    'Price: ${widget.price.toStringAsFixed(2)} VND',
+                    style: text20.semiBold.copyWith(color: whiteColor),
+                  ),
+                  // Add more information about the product...
 
-  // Future<void>_showAddToCartDialog() async {
-  //   return showDialog<void>(
-  //     context: context,
-  //     builder: (BuildContext context) {
-  //       return AlertDialog(
-  //         //title: Text('ĐẶT HÀNG THEO YÊU CẦU',style: text22.semiBold.copyWith(color: whiteColor),),
-  //         backgroundColor: maincolor,
-  //         shape: RoundedRectangleBorder(
-  //           borderRadius: BorderRadius.circular(20.0),
-  //         ),
-  //         content: SizedBox(
-  //           height: 400.sp,
-  //           child: Column(
-  //           children: [
-  //             Image.network(
-  //             widget.imagePath,
-  //             width: double.infinity,
-  //             height: 200.0,
-  //             fit: BoxFit.cover,
-  //           ),
-  //           SizedBox(height: 16.0),
-  //           Text(
-  //             widget.productName,
-  //             style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
-  //           ),
-  //           SizedBox(height: 8.0),
-  //           Text(
-  //             'Price: \VND${widget.price.toStringAsFixed(2)}',
-  //             style: TextStyle(fontSize: 18.0, color: Colors.green),
-  //           ),
-            
-  //         ])
-  //         )
-          
-  //       );
-  //     },
-  //   );
-  // }
+                  SizedBox(height: 16.0),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      IconButton(
+                        icon: Icon(Icons.remove),
+                        onPressed: () {
+                          setState(() {
+                            if (_quantity > 1) {
+                              _quantity--;
+                            }
+                          });
+                        },
+                      ),
+                      Text(
+                        '$_quantity',
+                        style: TextStyle(fontSize: 18.0),
+                      ),
+                      IconButton(
+                        icon: Icon(Icons.add),
+                        onPressed: () {
+                          setState(() {
+                            _quantity++;
+                          });
+                        },
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      ElevatedButton(
+                        onPressed: () {
+                          // Handle custom order submission
+                          Navigator.of(context).pop(); // Close the dialog
+                        },
+                        child: Text(
+                          'Thêm vào giỏ hàng',
+                          style: text18.medium.copyWith(color: whiteColor),
+                        ),
+                      ),
+                      SizedBox(width: 10.sp,),
+                      ElevatedButton(
+                        onPressed: () {
+                          Navigator.of(context).pop(
+                              'đã gửi thành công'); // Close the dialog on cancel
+                        },
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.grey, // Set color for cancel button
+                        ),
+                        child: Text(
+                          'Hủy',
+                          style: text18.medium.copyWith(color: whiteColor),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ));
+      },
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: maincolor,
-        title: Text('Product Detail'),
+        title: Text('CHI TIẾT SẢN PHẨM'),
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16.0),
@@ -180,27 +245,27 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
             SizedBox(height: 16.0),
             Text(
               widget.productName,
-              style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
+              style: text26.semiBold,
             ),
             SizedBox(height: 8.0),
             Text(
-              'Price: \VND${widget.price.toStringAsFixed(2)}',
-              style: TextStyle(fontSize: 18.0, color: Colors.green),
+              'Price: ${widget.price.toStringAsFixed(2)} VND',
+              style: text20.semiBold.copyWith(color: Colors.green),
             ),
             SizedBox(height: 8.0),
             Text(
               'Description:',
-              style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+              style: text20.semiBold,
             ),
             SizedBox(height: 8.0),
             Text(
               widget.description,
-              style: TextStyle(fontSize: 16.0),
+              style: text20.regular,
             ),
             SizedBox(height: 8.0),
             Text(
               'Seller: ${widget.sellerName}',
-              style: TextStyle(fontSize: 18.0),
+              style: text20.regular,
             ),
             SizedBox(height: 20.sp),
             Column(
@@ -208,7 +273,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
               //crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Container(
-                  width: 229.0.sp,
+                  width: 240.0.sp,
                   child: ElevatedButton(
                     onPressed: () {
                       // Add your logic for 'Nhắn tin' button
@@ -216,12 +281,15 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                     style: ElevatedButton.styleFrom(
                       primary: Colors.blue, // Set color for this button
                     ),
-                    child: Text('Nhắn tin'),
+                    child: Text(
+                      'Nhắn tin',
+                      style: text20.regular.copyWith(color: whiteColor),
+                    ),
                   ),
                 ),
                 SizedBox(height: 8.0), // Add space between buttons
                 Container(
-                  width: 229.0.sp,
+                  width: 240.0.sp,
                   child: ElevatedButton(
                     onPressed: () {
                       // Add your logic for 'Mua ngay' button
@@ -229,26 +297,28 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                     style: ElevatedButton.styleFrom(
                       primary: Colors.green, // Set color for this button
                     ),
-                    child: Text('Mua ngay'),
+                    child: Text('Mua ngay',
+                        style: text20.regular.copyWith(color: whiteColor)),
                   ),
                 ),
                 SizedBox(height: 8.0), // Add space between buttons
                 Container(
-                  width: 229.0.sp,
+                  width: 240.0.sp,
                   child: ElevatedButton(
                     onPressed: () {
-                      //_showAddToCartDialog();
+                      _showAddToCartDialog();
                       // Add your logic for 'Thêm vào giỏ hàng' button
                     },
                     style: ElevatedButton.styleFrom(
                       primary: Colors.orange, // Set color for this button
                     ),
-                    child: Text('Thêm vào giỏ hàng'),
+                    child: Text('Thêm vào giỏ hàng',
+                        style: text20.regular.copyWith(color: whiteColor)),
                   ),
                 ),
                 SizedBox(height: 8.0), // Add space between buttons
                 Container(
-                  width: 229.0.sp,
+                  width: 240.0.sp,
                   child: ElevatedButton(
                     onPressed: () {
                       _showCustomOrderDialog();
@@ -257,7 +327,8 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                     style: ElevatedButton.styleFrom(
                       primary: Colors.red, // Set color for this button
                     ),
-                    child: Text('Đặt hàng theo yêu cầu'),
+                    child: Text('Đặt hàng theo yêu cầu',
+                        style: text20.regular.copyWith(color: whiteColor)),
                   ),
                 ),
               ],
