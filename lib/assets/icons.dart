@@ -78,6 +78,10 @@ class Png {
   static const String img_chamkhac = 'assets/images/chamkhac.png';
   static const String img_battrang = 'assets/images/battrang.png';
   static const String img_tab1_1 = 'assets/images/tab1_1.jpg';
+  static const String daugia1 = 'assets/images/daugia1.png';
+  static const String daugia2 = 'assets/images/daugia2.png';
+
+
 
 }
 

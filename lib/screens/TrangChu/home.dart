@@ -132,9 +132,7 @@ class _MyWidgetState extends State<HomePage> {
       ),
     )));
   }
-
-//Widget build category
-  List<Widget> buildImageWidgets() {
+List<Widget> buildImageWidgets() {
     return imageDataList.map((imageData) {
       return GestureDetector(
         onTap: () {
@@ -161,8 +159,6 @@ class _MyWidgetState extends State<HomePage> {
     }).toList();
   }
 }
-
-//Tab 
 class ImageTab extends StatelessWidget {
   final List<String> imageUrls;
 
@@ -181,7 +177,6 @@ class ImageTab extends StatelessWidget {
         return 
         GestureDetector(
           onTap: () {
-            // Navigate to the detail page when an image is tapped
             Navigator.push(
               context,
               MaterialPageRoute(
