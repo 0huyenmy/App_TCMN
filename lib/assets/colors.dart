@@ -39,6 +39,9 @@ const Color kcLightSalmonPink = Color(0xFFFA9E93);
 const Color kcNickel = Color.fromARGB(255, 136, 136, 136);
 const Color kcBottom = Color(0xffDFE0E5);
 const Color kcBackground = Color(0xff0F172A);
+const Color HomeNormal = Color(0xffffad85);
+const Color h1 = Color(0xff454545);
+
 
 /// Rich Lavender
 /// #AD60C7

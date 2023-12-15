@@ -34,7 +34,7 @@ class _MyWidgetState extends State<GioHangPage> {
                       color: Color.fromARGB(255, 59, 153, 156),
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    labelColor: whiteColor,
+                    labelColor: h1,
                     unselectedLabelColor: Colors.white,
                     tabs: [
                       Tab(
@@ -92,7 +92,7 @@ class ProductItem extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10.0),
               image: DecorationImage(
-                image: NetworkImage(imageUrl),
+                image: AssetImage(imageUrl),
                 fit: BoxFit.cover,
               ),
             ),
@@ -143,37 +143,32 @@ class Tab1Content extends StatelessWidget {
     return ListView(
       children: [
         ProductItem(
-          imageUrl:
-              'https://lytachun.com/wp-content/uploads/2021/07/tui-xach-tho-cam-day-rut2.jpg',
-          productName: 'Túi thổ cẩm',
+          imageUrl: Png.img_bat_dua,
+          productName: 'Bát làm từ dừa',
           quantity: 2,
           totalAmount: 250000.0,
         ),
         ProductItem(
-          imageUrl:
-              'https://longhungphat.com/luutru/images/mat-hang/gui-hang-thu-cong-my-nghe-di-uc.jpg',
-          productName: 'Gốm sơn mài',
+          imageUrl: Png.img_dia_da,
+          productName: 'Dĩa đá sơn mài',
           quantity: 1,
           totalAmount: 15000.0,
         ),
         ProductItem(
-          imageUrl:
-              'https://i.ex-cdn.com/taichinhdoanhnghiep.net.vn/files/mainguyen/2021/02/04/7-1-1709.jpg',
-          productName: 'Bát lợn con',
+          imageUrl: Png.img_binh_son_mai,
+          productName: 'Bình sơn mài',
           quantity: 2,
           totalAmount: 350000.0,
         ),
         ProductItem(
-          imageUrl:
-              'https://canmuagi.vn/wp-content/uploads/2023/05/hang-thu-cong-my-nghe-co.jpg',
-          productName: 'Bình hoa thời Trần',
+          imageUrl: Png.img_gio_tre,
+          productName: 'Giỏ tre đan',
           quantity: 1,
           totalAmount: 1500000.0,
         ),
         ProductItem(
-          imageUrl:
-              'https://gotrangtri.vn/wp-content/uploads/2019/08/my-nghe-dua-3-1.jpg',
-          productName: 'Bát làm từ dừa',
+          imageUrl: Png.img_may_go,
+          productName: 'Mây gỗ khắc',
           quantity: 1,
           totalAmount: 120000.0,
         ),
@@ -192,8 +187,8 @@ class Tab1Content extends StatelessWidget {
                 // Handle delete all action
               },
               style: ElevatedButton.styleFrom(
-                        primary: maincolor, // Đặt màu cho nút
-                      ),
+                primary: maincolor, // Đặt màu cho nút
+              ),
               child: Text(
                 'Delete All',
                 style: text20.medium.copyWith(color: whiteColor),
@@ -233,7 +228,7 @@ class ProductItemTab2 extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10.0),
               image: DecorationImage(
-                image: NetworkImage(imageUrl),
+                image: AssetImage(imageUrl),
                 fit: BoxFit.cover,
               ),
             ),
@@ -293,37 +288,33 @@ class Tab2Content extends StatelessWidget {
     return ListView(
       children: [
         ProductItemTab2(
-          imageUrl:
-              'https://gotrangtri.vn/wp-content/uploads/2019/08/thu-cong-my-nghe-lam-tu-dua-8.jpg',
+          imageUrl: Png.img_bat_dua,
           productName: 'Bát làm từ dừa',
           quantity: 2,
           totalAmount: 250000.0,
         ),
         ProductItemTab2(
-          imageUrl:
-              'https://nhacuangoai.vn/wp-content/uploads/2019/11/de%CC%80n-du%CC%9B%CC%81ng-scaled.jpg',
-          productName: 'Đèn gốm trố thủng',
+          imageUrl: Png.img_trang_suc,
+          productName: 'Trâm cài',
           quantity: 1,
           totalAmount: 15000.0,
         ),
         ProductItemTab2(
-          imageUrl:
-              'https://ninebegin.com/wp-content/uploads/2021/01/combo-3-ro-may-dan-thu-cong-hoa-tiet-hoa-dung-do-decor-1.jpg',
-          productName: 'Bình hoa',
+          imageUrl: Png.img_ly_son_mai,
+          productName: 'Ly nước sơn mài',
           quantity: 2,
           totalAmount: 350000.0,
         ),
         ProductItemTab2(
-          imageUrl:
-              'https://canmuagi.vn/wp-content/uploads/2023/05/hang-thu-cong-my-nghe-co.jpg',
-          productName: 'Bình hoa thời Trần',
+          imageUrl: Png.img_ro_tre,
+          productName: 'Rổ đan bằng tre',
           quantity: 1,
           totalAmount: 1500000.0,
         ),
         ProductItemTab2(
-          imageUrl:
-              'https://gotrangtri.vn/wp-content/uploads/2019/08/my-nghe-dua-3-1.jpg',
-          productName: 'Bát làm từ dừa',
+          imageUrl: 
+          Png.img_tui_tho_cam,
+          productName: 'Túi thổ cẩm',
           quantity: 1,
           totalAmount: 120000.0,
         ),

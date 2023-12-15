@@ -103,7 +103,7 @@ class _MyWidgetState extends State<HomePage> {
                           color: Color.fromARGB(255, 59, 153, 156),
                           borderRadius: BorderRadius.circular(30),
                         ),
-                        labelColor: whiteColor,
+                        labelColor: h1,
                         unselectedLabelColor: Colors.white,
                         tabs: [
                           Tab(
@@ -120,21 +120,20 @@ class _MyWidgetState extends State<HomePage> {
                       child: TabBarView(
                     children: [
                       ImageTab([
-                        'https://lytachun.com/wp-content/uploads/2021/07/tui-xach-tho-cam-day-rut2.jpg',
-                        'https://moit.gov.vn/upload/2005517/20210626/778242e05dd0d395f9cc17e8f86ded2e1e34319e-b3f4-4c1b-a25e-0aedaf9eab42_t%3D1608000288577.jpg',
-                        'https://media.istockphoto.com/id/1309646840/vi/anh/bao-b%C3%AC-th%E1%BB%A7-c%C3%B4ng-m%E1%BB%B9-ngh%E1%BB%87-t%E1%BB%AB-s%E1%BA%A3n-ph%E1%BA%A9m-t%E1%BB%B1-nhi%C3%AAn.jpg?s=612x612&w=0&k=20&c=Y7Y3hDjZGFJfph8Apad-Dlzzs-UfBdZKh5X4tJMNQZ8=',
-                        'https://www.sapo.vn/Themes/Portal/Default/Images/LandingPage/sapo-thiet-ke-web-thu-cong-my-nghe.png',
-                        'https://myngheviet.vn/www/uploads/images/tranh-dia-son-mai-thuan-buom-xuoi-gio-mnv-sma431-d35-2_result.jpg',
-                        'https://bvhttdl.mediacdn.vn/291773308735864832/2022/10/10/kyo8000-16650212569451854751919-1665367706474-16653677066951356797363.jpg'
+                        Png.img_tui_tho_cam,
+                        Png.img_long_tre,
+                        Png.img_ly_son_mai,
+                        Png.img_trang_suc,
+                        Png.img_ro_tre,
+                        Png.img_may_go,
                       ]),
                       ImageTab([
-                        'https://thoibaonganhang.vn/stores/news_dataimages/thanhlm/022017/23/09/921cab4bbc3c7b985f72c947f0a9f190_Untitled.jpg',
-                        'https://lytachun.com/wp-content/uploads/2021/07/tui-xach-tho-cam-day-rut2.jpg',
-                        'https://www.kindpng.com/picc/m/246-2462551_wood-craft-in-odisha-hd-png-download.png',
-                        'https://achaumedia.vn/wp-content/uploads/2020/08/do-my-nghe-1.jpg',
-                        'https://tapchilaoviet.org/wp-content/uploads/2020/10/hthkl.jpg',
-                        'https://achaumedia.vn/wp-content/uploads/2020/08/thu-cong-my-nghe-300x169.jpg',
-                        'https://img.lovepik.com/free-png/20211104/lovepik-pictures-of-wood-crafts-png-image_400256289_wh1200.png',
+                        Png.img_ro_may,
+                        Png.img_tui_tho_cam,
+                        Png.img_binh_son_mai,
+                        Png.img_cu_meo_go,
+                        Png.img_gio_tre,
+                        Png.img_dia_da
                       ])
                     ],
                   )),
@@ -142,9 +141,7 @@ class _MyWidgetState extends State<HomePage> {
               ),
             )));
   }
-
-//Widget build category
-  List<Widget> buildImageWidgets() {
+List<Widget> buildImageWidgets() {
     return imageDataList.map((imageData) {
       return GestureDetector(
         onTap: () {
@@ -183,14 +180,13 @@ class ImageTab extends StatelessWidget {
     return GridView.builder(
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
-        crossAxisSpacing: 10.0.sp,
-        mainAxisSpacing: 10.0.sp,
+        crossAxisSpacing: 20.0.sp,
+        mainAxisSpacing: 20.0.sp,
       ),
       itemCount: imageUrls.length,
       itemBuilder: (context, index) {
         return GestureDetector(
           onTap: () {
-            // Navigate to the detail page when an image is tapped
             Navigator.push(
               context,
               MaterialPageRoute(
@@ -208,7 +204,7 @@ class ImageTab extends StatelessWidget {
           },
           child: ClipRRect(
             borderRadius: BorderRadius.circular(24.sp),
-            child: Image.network(
+            child: Image.asset(
               imageUrls[index],
               fit: BoxFit.cover,
             ),

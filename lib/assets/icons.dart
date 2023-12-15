@@ -77,7 +77,29 @@ class Png {
   static const String img_gomynghe = 'assets/images/gomynghe.png';
   static const String img_chamkhac = 'assets/images/chamkhac.png';
   static const String img_battrang = 'assets/images/battrang.png';
-  static const String img_tab1_1 = 'assets/images/tab1_1.jpg';
+  static const String img_tui_tho_cam = 'assets/images/tui_tho_cam.jpg';
+  static const String daugia1 = 'assets/images/daugia1.png';
+  static const String daugia2 = 'assets/images/daugia2.png';
+  static const String img_long_tre = 'assets/images/long_tre.jpg';
+  static const String img_ly_son_mai = 'assets/images/ly_son_mai.jpg';
+  static const String img_may_go = 'assets/images/may_go.jpg';
+  static const String img_ro_may = 'assets/images/ro_may.jpg';
+  static const String img_ro_tre = 'assets/images/ro_tre.jpg';
+  static const String img_trang_suc = 'assets/images/trang_suc.jpg';
+  static const String img_binh_son_mai = 'assets/images/binh_son_mai.jpg';
+  static const String img_cu_meo_go = 'assets/images/cu_meo_go.jpg';
+  static const String img_gio_tre = 'assets/images/gio_tre.jpg';
+  static const String img_bat_dua = 'assets/images/bat_dua.jpg';
+  static const String img_dia_mai = 'assets/images/dia_mai.jpg';
+  static const String img_lon = 'assets/images/lon.jpg';
+  static const String img_binh_hoa = 'assets/images/binh_hoa.jpg';
+  static const String img_bat_dua1 = 'assets/images/bat_dua1.jpg';
+  static const String img_binh_lo = 'assets/images/binh_lo.jpg';
+  static const String img_ro_tre1 = 'assets/images/ro_tre1.jpg';
+   static const String img_dia_da = 'assets/images/dia_da.jpg';
+  // static const String img_tab1_1 = 'assets/images/tab1_1.jpg';
+
+
 
 }
 
