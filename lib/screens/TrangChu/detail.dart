@@ -147,7 +147,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 //mainAxisSize: MainAxisSize.min,
                 children: [
-                  Image.network(
+                  Image.asset(
                     widget.imagePath,
                     width: 150.sp,
                     height: 150.0.sp,
@@ -236,7 +236,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
         child: Column(
           //crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Image.network(
+            Image.asset(
               widget.imagePath,
               width: double.infinity,
               height: 200.0,

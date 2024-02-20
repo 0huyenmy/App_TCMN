@@ -41,6 +41,8 @@ const Color kcBottom = Color(0xffDFE0E5);
 const Color kcBackground = Color(0xff0F172A);
 const Color HomeNormal = Color(0xffffad85);
 const Color h1 = Color(0xff454545);
+const Color pink = Color(0xffDB9E9E);
+const Color green = Color(0xff8CED83);
 
 
 /// Rich Lavender

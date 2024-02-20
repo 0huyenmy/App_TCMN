@@ -14,8 +14,8 @@ class MePage extends StatefulWidget {
 }
 
 class _MyWidgetState extends State<MePage> {
-  String username = 'Nguyễn Hoàng Thanh Ân';
-  String email = 'thanhan010@gmail.com';
+  String username = 'Phạm Thị Huyền Mi';
+  String email = 'mi@gmail.com';
   String tel = '0856936227';
   int followers = 100;
   int following = 50;

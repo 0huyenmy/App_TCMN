@@ -48,37 +48,86 @@ class _PostPageState extends State<PostPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            TextField(
-              controller: _productNameController,
-              decoration: InputDecoration(
-                labelText: 'Tên Sản Phẩm',
-                labelStyle: TextStyle(color: Colors.black),
-                //contentPadding: EdgeInsets.symmetric(vertical: 10.0),
-              ),
-              style: text20.regular,
-            ),
-            TextField(
-              controller: _productNameController,
-              decoration: InputDecoration(
-                labelText: 'Giá',
-                labelStyle: TextStyle(color: Colors.black),
-                //contentPadding: EdgeInsets.symmetric(vertical: 10.0),
-              ),
-              style: text20.regular,
-              keyboardType: TextInputType.number,
-            ),
-            TextField(
-              controller: _productNameController,
-              decoration: InputDecoration(
-                labelText: 'Mô tả sản phẩm',
-                labelStyle: TextStyle(color: Colors.black),
-                //contentPadding: EdgeInsets.symmetric(vertical: 10.0),
-              ),
-              style: text20.regular,
-              maxLines: 4,
+            Text(
+              'Tên sản phẩm',
+              style: text20.medium,
             ),
             SizedBox(height: 16.sp),
-            Text('Tải ảnh lên', style: text20.regular,),
+            Container(
+              height: 50.sp, // Tùy chỉnh chiều cao của TextField
+              decoration: BoxDecoration(
+                border:
+                    Border.all(color: Colors.grey), // Màu viền của TextField
+                borderRadius: BorderRadius.circular(8), // Độ cong của các góc
+              ),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(
+                    horizontal: 10), // Khoảng cách giữa nội dung và viền
+                child: TextField(
+                  decoration: InputDecoration(
+                    hintText: 'Nhập tên sản phẩm',
+                    border:
+                        InputBorder.none, // Loại bỏ viền mặc định của TextField
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: 16.sp),
+            Text(
+              'Giá',
+              style: text20.medium,
+            ),
+            SizedBox(height: 16.sp),
+            Container(
+              height: 50.sp, // Tùy chỉnh chiều cao của TextField
+              decoration: BoxDecoration(
+                border:
+                    Border.all(color: Colors.grey), // Màu viền của TextField
+                borderRadius: BorderRadius.circular(8), // Độ cong của các góc
+              ),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(
+                    horizontal: 10), // Khoảng cách giữa nội dung và viền
+                child: TextField(
+                  decoration: InputDecoration(
+                    hintText: 'Nhập giá phẩm',
+                    border:
+                        InputBorder.none, // Loại bỏ viền mặc định của TextField
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: 16.sp),
+            Text(
+              'Mô tả',
+              style: text20.medium,
+            ),
+            SizedBox(height: 16.sp),
+            Container(
+              height: 100.sp, // Tùy chỉnh chiều cao của TextField
+              decoration: BoxDecoration(
+                border:
+                    Border.all(color: Colors.grey), // Màu viền của TextField
+                borderRadius: BorderRadius.circular(8), // Độ cong của các góc
+              ),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(
+                    horizontal: 10), // Khoảng cách giữa nội dung và viền
+                child: TextField(
+                  decoration: InputDecoration(
+                    hintText: 'Nhập mô tả',
+                    border:
+                        InputBorder.none, // Loại bỏ viền mặc định của TextField
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: 16.sp),
+            SizedBox(height: 16.sp),
+            Text(
+              'Tải ảnh lên',
+              style: text20.medium,
+            ),
             SizedBox(height: 16.sp),
             GestureDetector(
               onTap: selectImage,

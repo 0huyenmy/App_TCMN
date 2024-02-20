@@ -94,28 +94,16 @@ class _MyWidgetState extends State<DauGiaPage> {
                                               ),
                                               SizedBox(height: 10.sp),
                                               Text(
-                                                'Bình Gốm Bát Tràng từ thế kỷ 14',
-                                                style: TextStyle(
-                                                  fontSize: 16.sp,
-                                                  color: h1,
-                                                ),
-                                              ),
+                                                  'Bình Gốm Bát Tràng từ thế kỷ 14',
+                                                  style: text18.medium),
                                               SizedBox(height: 5.sp),
-                                              Text(
-                                                '4.420.000 đ',
-                                                style: TextStyle(
-                                                  fontSize: 13.sp,
-                                                  color: blackColor,
-                                                ),
-                                              ),
+                                              Text('4.420.000 đ',
+                                                  style: text16.regular
+                                                      .copyWith(
+                                                          color: redColor)),
                                               SizedBox(height: 5.sp),
-                                              Text(
-                                                '6 bids - 2d 6h left',
-                                                style: TextStyle(
-                                                  fontSize: 13.sp,
-                                                  color: blackColor,
-                                                ),
-                                              ),
+                                              Text('6 bids - 2d 6h left',
+                                                  style: text16.regular),
                                             ],
                                           ),
                                         ),
@@ -152,28 +140,16 @@ class _MyWidgetState extends State<DauGiaPage> {
                                               ),
                                               SizedBox(height: 10.sp),
                                               Text(
-                                                'Bình Gốm Bát Tràng từ thế kỷ 14',
-                                                style: TextStyle(
-                                                  fontSize: 16.sp,
-                                                  color: h1,
-                                                ),
-                                              ),
+                                                  'Bình Gốm Bát Tràng từ thế kỷ 14',
+                                                  style: text18.medium),
                                               SizedBox(height: 5.sp),
-                                              Text(
-                                                '4.420.000 đ',
-                                                style: TextStyle(
-                                                  fontSize: 13.sp,
-                                                  color: blackColor,
-                                                ),
-                                              ),
+                                              Text('4.420.000 đ',
+                                                  style: text16.regular
+                                                      .copyWith(
+                                                          color: redColor)),
                                               SizedBox(height: 5.sp),
-                                              Text(
-                                                '6 bids - 2d 6h left',
-                                                style: TextStyle(
-                                                  fontSize: 13.sp,
-                                                  color: blackColor,
-                                                ),
-                                              ),
+                                              Text('6 bids - 2d 6h left',
+                                                  style: text16.regular),
                                               SizedBox(
                                                 height: 10.sp,
                                               ),
@@ -197,28 +173,16 @@ class _MyWidgetState extends State<DauGiaPage> {
                                               ),
                                               SizedBox(height: 10.sp),
                                               Text(
-                                                'Bình Gốm Bát Tràng từ thế kỷ 14',
-                                                style: TextStyle(
-                                                  fontSize: 16.sp,
-                                                  color: h1,
-                                                ),
-                                              ),
+                                                  'Bình Gốm Bát Tràng từ thế kỷ 14',
+                                                  style: text18.medium),
                                               SizedBox(height: 5.sp),
-                                              Text(
-                                                '4.420.000 đ',
-                                                style: TextStyle(
-                                                  fontSize: 13.sp,
-                                                  color: blackColor,
-                                                ),
-                                              ),
+                                              Text('4.420.000 đ',
+                                                  style: text16.regular
+                                                      .copyWith(
+                                                          color: redColor)),
                                               SizedBox(height: 5.sp),
-                                              Text(
-                                                '6 bids - 2d 6h left',
-                                                style: TextStyle(
-                                                  fontSize: 13.sp,
-                                                  color: blackColor,
-                                                ),
-                                              ),
+                                              Text('6 bids - 2d 6h left',
+                                                  style: text16.regular),
                                             ],
                                           ),
                                         ),
@@ -259,28 +223,15 @@ class _MyWidgetState extends State<DauGiaPage> {
                                         ),
                                         SizedBox(height: 10.sp),
                                         Text(
-                                          'Ấm Chén Thưởng Trà - Bát Tràng Độc Quyền',
-                                          style: TextStyle(
-                                            fontSize: 16.sp,
-                                            color: h1,
-                                          ),
-                                        ),
+                                            'Ấm  chén thưởng trà - Bát Tràng độc quyền',
+                                            style: text18.medium),
                                         SizedBox(height: 5.sp),
-                                        Text(
-                                          '420.000 đ',
-                                          style: TextStyle(
-                                            fontSize: 13.sp,
-                                            color: blackColor,
-                                          ),
-                                        ),
+                                        Text('420.000 đ',
+                                            style: text16.regular
+                                                .copyWith(color: redColor)),
                                         SizedBox(height: 5.sp),
-                                        Text(
-                                          '2 bids - 5d 6h left',
-                                          style: TextStyle(
-                                            fontSize: 13.sp,
-                                            color: blackColor,
-                                          ),
-                                        ),
+                                        Text('2 bids - 5d 6h left',
+                                            style: text16.regular),
                                         SizedBox(
                                           height: 10.sp,
                                         ),
@@ -302,28 +253,15 @@ class _MyWidgetState extends State<DauGiaPage> {
                                         ),
                                         SizedBox(height: 10.sp),
                                         Text(
-                                          'Ấm Chén Thưởng Trà - Bát Tràng Độc Quyền',
-                                          style: TextStyle(
-                                            fontSize: 16.sp,
-                                            color: h1,
-                                          ),
-                                        ),
+                                            'Ấm  chén thưởng trà - Bát Tràng độc quyền',
+                                            style: text18.medium),
                                         SizedBox(height: 5.sp),
-                                        Text(
-                                          '420.000 đ',
-                                          style: TextStyle(
-                                            fontSize: 13.sp,
-                                            color: blackColor,
-                                          ),
-                                        ),
+                                        Text('420.000 đ',
+                                            style: text16.regular
+                                                .copyWith(color: redColor)),
                                         SizedBox(height: 5.sp),
-                                        Text(
-                                          '2 bids - 5d 6h left',
-                                          style: TextStyle(
-                                            fontSize: 13.sp,
-                                            color: blackColor,
-                                          ),
-                                        ),
+                                        Text('2 bids - 5d 6h left',
+                                            style: text16.regular),
                                         SizedBox(
                                           height: 10.sp,
                                         ),
@@ -345,28 +283,15 @@ class _MyWidgetState extends State<DauGiaPage> {
                                         ),
                                         SizedBox(height: 10.sp),
                                         Text(
-                                          'Ấm Chén Thưởng Trà - Bát Tràng Độc Quyền',
-                                          style: TextStyle(
-                                            fontSize: 16.sp,
-                                            color: h1,
-                                          ),
-                                        ),
+                                            'Ấm  chén thưởng trà - Bát Tràng độc quyền',
+                                            style: text18.medium),
                                         SizedBox(height: 5.sp),
-                                        Text(
-                                          '420.000 đ',
-                                          style: TextStyle(
-                                            fontSize: 13.sp,
-                                            color: blackColor,
-                                          ),
-                                        ),
+                                        Text('420.000 đ',
+                                            style: text16.regular
+                                                .copyWith(color: redColor)),
                                         SizedBox(height: 5.sp),
-                                        Text(
-                                          '2 bids - 5d 6h left',
-                                          style: TextStyle(
-                                            fontSize: 13.sp,
-                                            color: blackColor,
-                                          ),
-                                        ),
+                                        Text('2 bids - 5d 6h left',
+                                            style: text16.regular),
                                       ],
                                     ),
                                   ),
@@ -377,28 +302,8 @@ class _MyWidgetState extends State<DauGiaPage> {
                         ),
                       ),
                     ),
-                    //         ListView.builder(
-                    //   itemCount: yourAuctionList.length,
-                    //   itemBuilder: (context, index) {
-                    //     return ListTile(
-                    //       leading: Image.asset(
-                    //         yourAuctionList[index].imageName, // Đường dẫn ảnh từ asset
-                    //         width: 50.0,
-                    //         height: 50.0,
-                    //         fit: BoxFit.cover,
-                    //       ),
-                    //       title: Text(
-                    //         yourAuctionList[index].title,
-                    //         style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
-                    //       ),
-                    //       subtitle: Text(
-                    //         'Thông tin khác của sản phẩm',
-                    //         style: TextStyle(fontSize: 14.0),
-                    //       ),
-                    //     );
-                    //   },
-                    // ),
-                    SingleChildScrollView(padding:EdgeInsets.fromLTRB(16, 0, 16, 16) ,
+                    SingleChildScrollView(
+                      padding: EdgeInsets.fromLTRB(16, 0, 16, 16),
                       child: Column(
                         children: [
                           // Sản phẩm 1
@@ -413,8 +318,8 @@ class _MyWidgetState extends State<DauGiaPage> {
                               children: [
                                 // Hình ảnh
                                 Container(
-                                  width: 50.0,
-                                  height: 50.0,
+                                  width: 100.0,
+                                  height: 120.0,
                                   decoration: BoxDecoration(
                                     image: DecorationImage(
                                       image: AssetImage(
@@ -432,16 +337,53 @@ class _MyWidgetState extends State<DauGiaPage> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        'Sản phẩm 1',
-                                        style: TextStyle(
-                                          fontSize: 16.0,
-                                          fontWeight: FontWeight.bold,
-                                        ),
+                                        'Lư hương hoa lam thế kỷ 17',
+                                        style: text20.semiBold,
                                       ),
                                       SizedBox(height: 4.0),
+                                      Row(
+                                        children: [
+                                          Text(
+                                            '4.420.000 đ',
+                                            style: text18.medium
+                                                .copyWith(color: redColor),
+                                          ),
+                                          Icon(
+                                            Icons.arrow_forward,
+                                            color: blackColor,
+                                          ),
+                                          Text(
+                                            '4.480.000 đ',
+                                            style: text18.medium
+                                                .copyWith(color: green),
+                                          ),
+                                        ],
+                                      ),
+                                      SizedBox(
+                                        height: 4.sp,
+                                      ),
                                       Text(
-                                        'Thông tin khác của sản phẩm',
-                                        style: TextStyle(fontSize: 14.0),
+                                        '6 đặt giá - còn 2 ngày 6 giờ',
+                                        style: text18.medium,
+                                      ),
+                                      SizedBox(
+                                        height: 4.sp,
+                                      ),
+                                      Align(
+                                        alignment: Alignment.centerRight,
+                                        child: ElevatedButton(
+                                          onPressed: () {
+                                            // Xử lý khi nhấn vào nút Đánh giá
+                                          },
+                                          style: ElevatedButton.styleFrom(
+                                            primary: pink, // Đặt màu cho nút
+                                          ),
+                                          child: Text(
+                                            'Chờ đóng giá',
+                                            style: text18.medium
+                                                .copyWith(color: whiteColor),
+                                          ),
+                                        ),
                                       ),
                                     ],
                                   ),
@@ -461,8 +403,8 @@ class _MyWidgetState extends State<DauGiaPage> {
                               children: [
                                 // Hình ảnh
                                 Container(
-                                  width: 50.0,
-                                  height: 50.0,
+                                  width: 100.0,
+                                  height: 120.0,
                                   decoration: BoxDecoration(
                                     image: DecorationImage(
                                       image: AssetImage(
@@ -480,16 +422,223 @@ class _MyWidgetState extends State<DauGiaPage> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        'Sản phẩm 2',
-                                        style: TextStyle(
-                                          fontSize: 16.0,
-                                          fontWeight: FontWeight.bold,
-                                        ),
+                                        'Ấm chén thưởng trà',
+                                        style: text20.semiBold,
                                       ),
                                       SizedBox(height: 4.0),
+                                      Row(
+                                        children: [
+                                          Text(
+                                            '420.000 đ',
+                                            style: text18.medium
+                                                .copyWith(color: redColor),
+                                          ),
+                                          Icon(
+                                            Icons.arrow_forward,
+                                            color: blackColor,
+                                          ),
+                                          Text(
+                                            '480.000 đ',
+                                            style: text18.medium
+                                                .copyWith(color: green),
+                                          ),
+                                        ],
+                                      ),
+                                      SizedBox(
+                                        height: 4.sp,
+                                      ),
                                       Text(
-                                        'Thông tin khác của sản phẩm',
-                                        style: TextStyle(fontSize: 14.0),
+                                        '2 đặt giá - đã đóng phiên',
+                                        style: text18.medium,
+                                      ),
+                                      SizedBox(
+                                        height: 4.sp,
+                                      ),
+                                      Align(
+                                        alignment: Alignment.centerRight,
+                                        child: ElevatedButton(
+                                          onPressed: () {
+                                            // Xử lý khi nhấn vào nút Đánh giá
+                                          },
+                                          style: ElevatedButton.styleFrom(
+                                            primary: green, // Đặt màu cho nút
+                                          ),
+                                          child: Text(
+                                            'Thành công',
+                                            style: text18.medium
+                                                .copyWith(color: whiteColor),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          //sản phẩm 3
+                          Container(
+                            padding: EdgeInsets.all(8.0),
+                            margin: EdgeInsets.symmetric(vertical: 8.0),
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.grey),
+                              borderRadius: BorderRadius.circular(8.0),
+                            ),
+                            child: Row(
+                              children: [
+                                // Hình ảnh
+                                Container(
+                                  width: 100.0,
+                                  height: 120.0,
+                                  decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                      image: AssetImage(
+                                          'assets/images/daugia2.png'),
+                                      fit: BoxFit.cover,
+                                    ),
+                                    borderRadius: BorderRadius.circular(8.0),
+                                  ),
+                                ),
+                                SizedBox(width: 8.0),
+                                // Thông tin sản phẩm
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        'Ấm chén trà Bát Tràng độc quyền',
+                                        style: text20.semiBold,
+                                      ),
+                                      SizedBox(height: 4.0),
+                                      Row(
+                                        children: [
+                                          Text(
+                                            '550.000 đ',
+                                            style: text18.medium
+                                                .copyWith(color: redColor),
+                                          ),
+                                          Icon(
+                                            Icons.arrow_forward,
+                                            color: blackColor,
+                                          ),
+                                          Text(
+                                            '600.000 đ',
+                                            style: text18.medium
+                                                .copyWith(color: green),
+                                          ),
+                                        ],
+                                      ),
+                                      SizedBox(
+                                        height: 4.sp,
+                                      ),
+                                      Text(
+                                        '3 đặt giá - đã đóng phiên',
+                                        style: text18.medium,
+                                      ),
+                                      SizedBox(
+                                        height: 4.sp,
+                                      ),
+                                      Align(
+                                        alignment: Alignment.centerRight,
+                                        child: ElevatedButton(
+                                          onPressed: () {
+                                            // Xử lý khi nhấn vào nút Đánh giá
+                                          },
+                                          style: ElevatedButton.styleFrom(
+                                            primary: grey400, // Đặt màu cho nút
+                                          ),
+                                          child: Text(
+                                            'Thất bại',
+                                            style: text18.medium
+                                                .copyWith(color: whiteColor),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          //sản phẩm 4
+                          Container(
+                            padding: EdgeInsets.all(8.0),
+                            margin: EdgeInsets.symmetric(vertical: 8.0),
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Colors.grey),
+                              borderRadius: BorderRadius.circular(8.0),
+                            ),
+                            child: Row(
+                              children: [
+                                // Hình ảnh
+                                Container(
+                                  width: 100.0,
+                                  height: 120.0,
+                                  decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                      image: AssetImage(
+                                          'assets/images/daugia1.png'),
+                                      fit: BoxFit.cover,
+                                    ),
+                                    borderRadius: BorderRadius.circular(8.0),
+                                  ),
+                                ),
+                                SizedBox(width: 8.0),
+                                // Thông tin sản phẩm
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        'Lư hương hoa lam thế kỷ 17',
+                                        style: text20.semiBold,
+                                      ),
+                                      SizedBox(height: 4.0),
+                                      Row(
+                                        children: [
+                                          Text(
+                                            '5.920.000 đ',
+                                            style: text18.medium
+                                                .copyWith(color: redColor),
+                                          ),
+                                          Icon(
+                                            Icons.arrow_forward,
+                                            color: blackColor,
+                                          ),
+                                          Text(
+                                            '6.500.000 đ',
+                                            style: text18.medium
+                                                .copyWith(color: green),
+                                          ),
+                                        ],
+                                      ),
+                                      SizedBox(
+                                        height: 4.sp,
+                                      ),
+                                      Text(
+                                        '6 đặt giá - còn 2 ngày 6 giờ',
+                                        style: text18.medium,
+                                      ),
+                                      SizedBox(
+                                        height: 4.sp,
+                                      ),
+                                      Align(
+                                        alignment: Alignment.centerRight,
+                                        child: ElevatedButton(
+                                          onPressed: () {
+                                            // Xử lý khi nhấn vào nút Đánh giá
+                                          },
+                                          style: ElevatedButton.styleFrom(
+                                            primary: pink, // Đặt màu cho nút
+                                          ),
+                                          child: Text(
+                                            'Chờ đóng giá',
+                                            style: text18.medium
+                                                .copyWith(color: whiteColor),
+                                          ),
+                                        ),
                                       ),
                                     ],
                                   ),
